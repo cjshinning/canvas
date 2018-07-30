@@ -222,16 +222,27 @@
 			// }
 
 			// 文字阴影
-			ctx.shadowOffsetX = 2;
-			ctx.shadowOffsetY = 2;
-			ctx.shadowBlur = 2;
-			ctx.shadowColor = 'rgba(0,0,0,0.5)';
-			ctx.fillText('Sample string',5,30);
+			// ctx.shadowOffsetX = 2;
+			// ctx.shadowOffsetY = 2;
+			// ctx.shadowBlur = 2;
+			// ctx.shadowColor = 'rgba(0,0,0,0.5)';
+			// ctx.fillText('Sample string',5,30);
+
+			// 填充文本
+			// ctx.font = '48px serif';
+			// ctx.fillText('Hello world', 10, 50);
+
+			// ctx.font = '48px serif';
+			// ctx.strokeText('Hello world', 10, 50);
+
+			ctx.font = '48px serif';
+			ctx.textBaseline = 'hanging';
+			ctx.strokeText('Hello world', 0, 100);
 		}
 		
 	</script>
 </head>
 <body onload="draw()">
-	<canvas id="canvas" width="150" height="150"></canvas>
+	<canvas id="canvas" width="300" height="300"></canvas>
 </body>
 </html>

@@ -158,11 +158,29 @@
 		}
 
 		window.requestAnimationFrame(clock);
+
+		
+		
+
 	</script>
 </head>
 
 <body>
 	<canvas id="canvas" width="150" height="150"></canvas>
+	<script>
+		// 闭包
+		function a(arr){
+			var i = 0;
+			return function(){
+				return arr[i++]
+			}
+		};
+
+		var b=a(['a','b','c']);
+		console.log(b());
+		console.log(b());
+		console.log(b());
+	</script>
 </body>
 
 </html>
